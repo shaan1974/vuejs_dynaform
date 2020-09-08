@@ -1,0 +1,26 @@
+.icon-reset {
+    top: 0px;
+    right: -3px;
+    z-index: 1;
+    margin-left: 2px!important;
+    float: right;
+    width: 16px;
+    position: absolute;
+    background-color: var(--customFileIconResetBgColor);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--customFileIconResetBorderColor);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 12px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.icon-reset:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 6px;
+    position: relative;
+    left: 0px;
+}

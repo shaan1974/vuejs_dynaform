@@ -1,0 +1,229 @@
+.rstable {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--rstableBorderColor);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rstable thead tr th {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--rstableTheadTrThBorderColor);
+}
+
+.rstable tr:nth-child(odd) td {
+    background-color: var(--rstableTrNthChildOddTdBgColor);
+}
+
+.rstable tr:nth-child(even) td {
+    background-color: var(--rstableTrNthChildEvenTdBgColor);
+}
+
+.rstable caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+.rstable tr {
+    background-color: var(--rstableTrBgColor);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--rstableTrBorderColor);
+}
+
+.rstable th:last-child {
+    width: 1%;
+    background-color: var(--rstableThLastChildBgColor);
+}
+
+.rstable button {
+    margin-left: 10px;
+}
+
+.rstable .noe {
+    height: 40px!important;
+    padding: 5px!important;
+    text-align: left!important;
+}
+
+@media screen and (max-width: 992px) {
+    .rstable tbody tr td:first-child {
+        background-color: var(--mediaRstableTbodyTrTdFirstChildBgColor);
+        width: 100%!important;
+        color: var(--mediaRstableTbodyTrTdFirstChildColor);
+    }
+    .rstable tbody tr td:last-child {
+        width: 100%!important;
+    }
+    .rstable {
+        border: 0;
+    }
+    .rstable tr:nth-child(odd) td {
+        background-color: var(--mediaRstableTrNthChildOddTdBgColor);
+    }
+    .rstable tr:nth-child(even) td {
+        background-color: var(--mediaRstableTrNthChildEvenTdBgColor);
+    }
+    .rstable caption {
+        font-size: 1.3em;
+    }
+    .rstable thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .rstable tr {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--mediaRstableTrBgColor);
+        display: block;
+        margin-bottom: .625em;
+    }
+    .rstable td {
+        display: block;
+        font-size: 13px;
+        text-align: right;
+        border: 0px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--mediaRstableTdBgColor);
+    }
+    .rstable td::before {
+        content: attr(data-label) "\A";
+        float: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        clear: both;
+        display: block;
+        text-align: left;
+        left: 0px;
+    }
+    .rstable td:last-child {
+        border-bottom: 0;
+    }
+    .rstable tfoot tr td.fc {
+        display: block;
+        height: 1px!important;
+    }
+    .rstable tfoot tr td:last-child {
+        display: block;
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .rstable tfoot tr td:before {
+        content: ""
+    }
+    .rstable .noe {
+        width: 100%!important;
+        height: 42px!important;
+        padding: 5px!important;
+    }
+    .rstable thead tr th:first-child,
+    .rstable tbody tr td:first-child,
+    .rstable tfoot tr td:first-child {
+        width: 100%;
+        text-align: left!important;
+        height: 30px;
+    }
+    .rstable thead tr th:first-child span,
+    .rstable tbody tr td:first-child span,
+    .rstable tfoot tr td:first-child span {
+        display: block;
+        padding: 5px;
+    }
+}
+
+.rstable .colCounter {
+    width: 3%;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.rstable thead tr th:first-child span,
+.rstable tbody tr td:first-child span,
+.rstable tfoot tr td:first-child span {
+    white-space: nowrap;
+}
+
+
+/*
+    VERTICAL TABLE
+*/
+
+.v-table {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--vTableBorderColor);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--vTableBorderColor);
+    margin-bottom: 0px;
+}
+
+.v-table-num {
+    background-color: var(--vTableNumBgColor);
+}
+
+.v-table-bottom {
+    padding-right: 0px!important;
+}
+
+
+/*
+    cp5px
+*/
+
+.cp5px {
+    padding: 5px;
+}
+
+.btn-repeater-remove:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 10px;
+    color: var(--btnRepeaterRemoveColor);
+    margin-right: 4px;
+}
+
+.btn-repeater-add:before {
+    font-family: dfi;
+    content: "\e908";
+    font-size: 10px;
+    color: var(--btnRepeaterAddColor);
+    margin-right: 4px;
+}
+
+
+/*  VERTICAL TAB */
+
+.form-group-table-repeater fieldset {
+    width: 100%;
+}
+
+.form-group-table-repeater fieldset table.table tbody .v-table-num {
+    width: 1%;
+}
+
+.form-group-table-repeater fieldset table.table tbody .v-table-bottom {
+    width: 1%;
+}
+
+.form-group-table-repeater fieldset table.table .noe {
+    background-color: var(--rstableTrNthChildOddTdBgColor);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--repeaterTableVerticalNoeBorderColor);
+}

@@ -1,0 +1,411 @@
+.calendar {
+    width: 100%;
+    position: relative;
+}
+
+.calendar .calendar-layout {
+    position: absolute;
+    z-index: 19;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--datePickerLayoutBorderColor);
+}
+
+.calendar .calendar-layout .calendar-header {
+    width: 100%;
+    background-color: var(--datePickerLayoutHeaderbgColor);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--datePickerLayoutHeaderColor);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.calendar .calendar-layout .calendar-header .row {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.calendar .calendar-layout .calendar-header .row .calendar-title {
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.calendar .calendar-layout .calendar-header .calendar-days {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: var(--datePickerCalendarDaysLayoutBgColor);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--datePickerCalendarDaysLayoutBorderColor);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--datePickerCalendarDaysLayoutBorderColor);
+}
+
+.calendar .calendar-layout .calendar-header .calendar-days .day {
+    max-width: calc(100% / 7);
+    padding: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.calendar .calendar-layout .calendar-body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--datePickerBodyBgcolor);
+    overflow: hidden;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row {
+    display: flex;
+    flex-direction: row;
+    transition: all .150s ease;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day {
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--datePickerCalendarDayBorderColor);
+    font-size: 14px;
+    color: var(--datePickerCalendarDayColor);
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day.disabled {
+    background-color: var(--datePickerCalendarDayDisabledBgColor) !important;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day.selected {
+    color: var(--datePickerCalendarDaySelectedColor);
+    background-color: var(--datePickerCalendarDaySelectedBgColor)
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day.selected:after {
+    width: 100%;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day:after {
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: var(--datePickerCalendarDayAfterBgColor);
+    position: absolute;
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day:hover {
+    color: var(--datePickerCalendarDayHoverBorderColor);
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day:hover:after {
+    width: 100%;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+}
+
+.calendar .go-left:before {
+    font-family: dfi;
+    content: "\e911";
+    font-size: 13px;
+    position: relative;
+    left: -2px;
+}
+
+.calendar .not.go-left:before {
+    font-family: dfi;
+    content: " ";
+    font-size: 13px;
+}
+
+.calendar .go-right,
+.calendar .go-left {
+    cursor: pointer;
+    width: 16px;
+}
+
+.calendar .go-right:before {
+    font-family: dfi;
+    content: "\e900";
+    font-size: 13px;
+    left: 5px;
+    position: relative;
+}
+
+.calendar .not.go-right:before {
+    font-family: dfi;
+    content: " ";
+    font-size: 13px;
+}
+
+.calendar .calendar-day:not(:empty) {
+    height: 30px!important;
+}
+
+.calendar no-bottom-radius {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.calendar input[mode='DATE'] {
+    text-align: center;
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+}
+
+.calendar input[mode='DATE'][disabled]+.input-group-append {
+    display: none;
+}
+
+.calendar .calendar-icon:before {
+    font-family: dfi;
+    content: "\e914";
+    font-size: 13px;
+}
+
+.calendar .input-group-append {
+    cursor: pointer;
+    height: calc(1.5em + .5rem + 2px);
+}
+
+.calendar .calendar-layout .calendar-body .calendar-row .calendar-day.disabled.selected {
+    background-color: var(--datePickerCalendarDaySelectedDisabledBgColor)!important;
+}
+
+.calendar .today:before {
+    position: absolute;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 10px solid transparent;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--datePickerCalendarDayTodayBorderColor);
+}
+
+.calendar .unselect {
+    color: var(--datePickerCalendarDayUnselectColor)!important;
+    cursor: not-allowed!important;
+    background-color: var(--datePickerCalendarDayUnselectBgColor);
+}
+
+.calendar .unselect:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: var(--datePickerCalendarDayUnselectStrikerColor);
+    width: 100%;
+}
+
+.calendar .unselect:hover:after {
+    background-color: transparent!important;
+}
+
+
+/* ----- */
+
+.calendar-header .row {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    height: 30px;
+}
+
+.calendar .go-left {
+    border-right-color: var(--datePickerCalendarDaysLayoutBorderColor);
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.calendar .go-right {
+    border-left-color: var(--datePickerCalendarDaysLayoutBorderColor);
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.calendar .go-right,
+.calendar .go-left {
+    background-color: var(--datePickerCalendarDaysGoBgColor);
+    height: 30px;
+    width: 24px;
+}
+
+.calendar .go-right:hover,
+.calendar .go-left:hover {
+    background-color: var(--datePickerCalendarDaysGoBgColorHover);
+}
+
+.calendar .go-left:before {
+    left: 4px;
+    top: 5px;
+}
+
+.calendar .go-right:before {
+    left: 5px;
+    top: 5px;
+}
+
+.form-group-date-picker .input-group {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+
+/* --- */
+
+.calendar .months_layout,
+.calendar .years_layout {
+    width: 100%;
+    background-color: var(--datePPickerMonthsBgColor);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.calendar .years_layout {
+    height: 205px;
+}
+
+.calendar .months_layout .calendar-title,
+.calendar .years_layout .calendar-title {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.months_layout table,
+.years_layout table {
+    width: 96%;
+    background-color: var(--datePPickerMonthsTableBgColor);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: .2rem;
+}
+
+.months_layout table td,
+.years_layout table td {
+    position: relative;
+    text-align: center;
+    height: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.years_layout table td span {
+    width: 100%;
+    height: 50px;
+    padding-top: 14px;
+    display: inline-block;
+}
+
+.months_layout table td div,
+.years_layout table td div {
+    height: 4px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s ease;
+    display: inline-block;
+    left: 0px;
+}
+
+.months_layout table td:hover div,
+.years_layout table td:hover div {
+    height: 4px;
+    width: 100%;
+    background-color: var(--datePickerCalendarDayHoverBorderColor);
+    position: absolute;
+    bottom: 0;
+    transition: all .3s ease;
+    display: inline-block;
+    left: 0px;
+}
+
+.months_layout table td:hover,
+.years_layout table td:hover {
+    background-color: var(--datePPickerMonthsTableTdHoverBgColor);
+    color: var(--datePPickerMonthsTableTdHoverColor);
+}
+
+.months_layout table td.current_month,
+.years_layout table td.current_year {
+    background-color: var(--datePPickerMonthsTableTdSelectedBgColor);
+    color: var(--datePPickerMonthsTableTdSelectedColor);
+    border-radius: .2rem;
+}
+
+.calendar .months_layout .row,
+.calendar .years_layout .row {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--datePickerLayoutHeaderbgColor);
+    color: var(--datePickerLayoutHeaderColor);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--datePickerLayoutHeaderColor);
+    font-size: 16px;
+}
+
+.calendar .months_layout .go-left:before,
+.calendar .years_layout .go-left:before {
+    left: 4px;
+    top: 3px;
+}
+
+.calendar .months_layout .go-right:before,
+.calendar .years_layout .go-right:before {
+    left: 5px;
+    top: 3px;
+}
+
+
+/* --- */

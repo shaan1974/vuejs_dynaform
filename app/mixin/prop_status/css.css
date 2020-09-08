@@ -1,0 +1,63 @@
+/* -------------- */
+
+.display-mode {
+    background-color: var(--displayModeBgColor)!important;
+}
+
+.display-mode .card-body {
+    padding: 5px 0px 0px 0px!important;
+}
+
+
+/* -------------- */
+
+.display-mode-input {
+    background-color: var(--displayModeBgColor)!important;
+}
+
+.v-tab .display-mode-input .card-body {
+    border: 0px!important;
+}
+
+.display-mode-input .card-body {
+    padding: 5px 0px 5px 0px!important;
+    text-align: left;
+}
+
+
+/* -------------- */
+
+.form-group-textarea-display [data-counter] {
+    display: none;
+}
+
+
+/*  ------------- */
+
+.form-group-drop-upload-display .no-files {
+    background-color: var(--displayModeBgColor)!important;
+    border-style: solid;
+    border-color: var(--displayModeBorderColor)!important;
+    border-radius: .25rem;
+    color: var(--displayModeColor)!important;
+    padding-left: 15px!important;
+}
+
+
+/*  ------------- */
+
+.form-group-image-cr-display .display-mode {
+    margin-bottom: 15px;
+}
+
+.form-group-image-cr-display .crop-wrapper * {
+    cursor: default!important;
+}
+
+.form-group-image-cr-display .resize-handle {
+    background-color: transparent!important;
+}
+
+.form-group-image-cr-display .overlays {
+    background-color: var(--displayModeBgColor)!important;
+}

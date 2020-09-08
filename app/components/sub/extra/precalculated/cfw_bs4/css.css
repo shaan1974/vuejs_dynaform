@@ -1,0 +1,13 @@
+.input-precalculated {
+    font-size: 13px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: var(--precalulatedBorerColor);
+    width: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 28px;
+    background-color: var(--precalulatedBgColor);
+}

@@ -1,0 +1,5 @@
+.custom-file-label.require {
+    background-image: var(--requireImage2);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}

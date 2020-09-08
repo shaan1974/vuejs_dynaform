@@ -1,0 +1,13 @@
+.footer-copyright {
+    background-color: var(--footerBgColor);
+    padding-top: 14px!important;
+    padding-bottom: 14px!important;
+    color: var(--footerColor);
+    padding-right: 60px;
+}
+
+@media (max-width: 767px) {
+    .footer-copyright {
+        padding-right: 10px;
+    }
+}

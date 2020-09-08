@@ -1,0 +1,3 @@
+input[type='hidden'][mode='CP'].val_error+div+input {
+    background-color: var(--valErrorBgColor1);
+}

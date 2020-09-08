@@ -1,0 +1,4 @@
+.drop_zone.disabled,
+.no-files.disabled {
+    opacity: 0.5;
+}

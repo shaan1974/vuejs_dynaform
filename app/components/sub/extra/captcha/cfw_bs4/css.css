@@ -1,0 +1,29 @@
+.form-group-captcha .divCanvas {
+    border-radius: 6px;
+}
+
+.form-group-captcha canvas {
+    /*prevent interaction with the canvas*/
+    pointer-events: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorPickerBtnSelectColor);
+    border-radius: 6px;
+    margin-right: 5px;
+    background-color: var(--autocompleteIconBgColor);
+}
+
+.form-group-captcha .input-group-prepend {
+    height: 31px;
+    cursor: pointer;
+}
+
+.form-group-captcha .input-group-prepend .input-group-text:before {
+    font-family: dfi;
+    content: "\e91c";
+    position: relative;
+}
+
+.form-group-captcha .input-group {
+    min-width: 180px;
+}

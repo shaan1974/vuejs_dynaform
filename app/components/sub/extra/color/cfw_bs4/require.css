@@ -1,0 +1,6 @@
+input[type='hidden'][mode='CP'].require+div+input {
+    padding-right: 15px;
+    background-image: var(--requireImage1);
+    background-repeat: no-repeat;
+    background-position: right top;
+}

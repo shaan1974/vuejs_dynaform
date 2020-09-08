@@ -1,0 +1,4 @@
+input[type='checkbox'].val_error+label {
+    border-color: var(--valErrorBorderColor);
+    background-color: var(--valErrorBgColor2);
+}

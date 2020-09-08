@@ -1,0 +1,40 @@
+/*
+	TOP TOP
+*/
+
+#toTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 999999;
+    border-radius: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#toTop button {
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, .5);
+}
+
+@media (max-width: 767px) {
+    #toTop {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 999999;
+        width: 40px;
+    }
+}
+
+#toTop button:hover {
+    background-color: var(--bttBgColor);
+}
+
+#toTop button:before {
+    font-family: dfi;
+    content: "\e91a";
+    font-size: 12px;
+    color: var(--bttButtonBeforeColor);
+}

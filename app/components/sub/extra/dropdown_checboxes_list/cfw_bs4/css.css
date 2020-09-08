@@ -1,0 +1,31 @@
+.form-group-dropdown-cl .dropdown-menu button {
+    font-size: 13px!important;
+}
+
+.form-group-dropdown-cl .dropdown-menu .form-check:hover {
+    color: var(--dropdownMenuButtonHoverColor);
+    background-color: var(--dropdownMenuButtonHoverBgColor);
+    border-color: var(--dropdownMenuButtonHoverBorderColor);
+    cursor: pointer;
+}
+
+.form-group-dropdown-cl .btn-group .dropdown-menu {
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: -3px;
+}
+
+.form-group-dropdown-cl .btn-group.show button {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-group-dropdown-cl .form-check {
+    padding-left: 10px;
+}
+
+.form-group-dropdown-cl .form-check label {
+    font-size: 13px;
+    width: 100%;
+}

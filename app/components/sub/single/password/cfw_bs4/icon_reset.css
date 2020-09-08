@@ -1,0 +1,4 @@
+.form-group-password input[type='password']+.clear,
+.form-group-password input[type='text']+.clear {
+    right: 30px;
+}

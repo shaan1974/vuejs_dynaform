@@ -1,0 +1,4 @@
+.form-group-image-cr label.val_error {
+    border-color: var(--valErrorBorderColor);
+    background-color: var(--valErrorBgColor2);
+}

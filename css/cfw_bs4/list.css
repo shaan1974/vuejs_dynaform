@@ -1,0 +1,19 @@
+ul.taglist {
+    list-style: none;
+}
+
+ul.taglist li {
+    display: inline-block;
+}
+
+ul.taglist li:not(:last-child):after {
+    content: ",\00a0";
+}
+
+ul.taglist li:last-child:after {
+    content: ".";
+}
+
+ul.noneList {
+    list-style-type: none;
+}

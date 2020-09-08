@@ -1,0 +1,28 @@
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ababab!important
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ababab!important;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ababab!important;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ababab!important;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #ababab!important;
+}

@@ -1,0 +1,5 @@
+.form-group-input-precalculated input[mode='PRC'].val_error+div.input-precalculated {
+    color: var(--valErrorColor);
+    border-color: var(--valErrorBorderColor)!important;
+    background-color: var(--valErrorBgColor1);
+}

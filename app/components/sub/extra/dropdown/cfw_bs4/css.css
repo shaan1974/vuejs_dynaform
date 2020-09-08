@@ -1,0 +1,21 @@
+.form-group-dropdown .dropdown-menu button {
+    font-size: 13px;
+}
+
+.form-group-dropdown .dropdown-menu button:hover {
+    color: var(--dropdownMenuButtonHoverColor);
+    background-color: var(--dropdownMenuButtonHoverBgColor);
+    border-color: var(--dropdownMenuButtonHoverBorderColor);
+}
+
+.form-group-dropdown .btn-group .dropdown-menu {
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: -3px;
+}
+
+.form-group-dropdown .btn-group.show button {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

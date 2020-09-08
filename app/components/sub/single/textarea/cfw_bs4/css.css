@@ -1,0 +1,43 @@
+    .textarea_clear_btn {
+        background-color: var(--textareaClearBtnBgColor);
+        width: 20px;
+        height: 22px;
+        line-height: 12px;
+        position: absolute;
+        right: 16px;
+        top: 1px;
+        border-top-right-radius: 4px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: var(--textareaClearBtnBorderColor);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--textareaClearBtnBorderColor);
+        text-align: center;
+        cursor: pointer!important;
+    }
+    
+    .textarea_clear_btn:before {
+        font-family: dfi;
+        content: "\e902";
+        font-size: 13px;
+        position: relative;
+        top: 4px;
+        left: 2px;
+    }
+    
+    .form-group-textarea textarea {
+        font-size: 14px;
+    }
+    
+    .form-group-textarea .alert-warning {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .form-group-textarea .alert-warning+.textarea_clear_btn+textarea,
+    .form-group-textarea .alert-warning+textarea {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }

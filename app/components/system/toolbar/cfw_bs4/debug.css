@@ -1,0 +1,45 @@
+/* DEBUG */
+
+.form-group-toolbar .card-body.debug:before {
+    position: absolute;
+    left: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .form-group-toolbar .card-body.debug:before {
+        content: "XS";
+    }
+}
+
+@media (min-width: 576px) {
+    .form-group-toolbar .card-body.debug:before {
+        content: "SM";
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+    .form-group-toolbar .card-body.debug:before {
+        content: "MD";
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .form-group-toolbar .card-body.debug:before {
+        content: "LG";
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .form-group-toolbar .card-body.debug:before {
+        content: "XL";
+    }
+}

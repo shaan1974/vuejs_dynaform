@@ -1,0 +1,25 @@
+    .require {
+        background-image: var(--requireImage1);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    /*  RADIO - CHECKBOX : START */
+    
+    .form-check-inline.require label {
+        padding-right: 15px;
+        background-image: var(--requireImage1);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    
+    .form-check-not-inline.require:first-child {
+        background-image: var(--requireImage1);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    
+    .form-check-not-inline.require {
+        border-right: 1px solid #a02f2d;
+        background-image: url();
+    }
+    /*  RADIO - CHECKBOX : END */

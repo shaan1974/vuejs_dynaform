@@ -1,0 +1,121 @@
+.form-group-color-picker .input-group-sm {
+    min-width: 170px;
+}
+
+.form-group-color-picker .input-group-sm input[type='text']+div.input-group-append .input-group-text {
+    height: 31px;
+}
+
+.form-group-color-picker .input-group-sm div.input-group-prepend .input-group-text {
+    height: 31px;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    width: 34px;
+}
+
+.form-group-color-picker .input-group-sm .input-group-append .input-group-text {
+    border-top-right-radius: .25rem!important;
+    border-bottom-right-radius: .25rem!important;
+}
+
+.form-group-color-picker .color-icon:before {
+    font-family: dfi;
+    content: "\e91b";
+    position: relative;
+    top: 0px;
+}
+
+.form-group-color-picker .input-group-prepend .input-group-text {
+    width: 32px;
+}
+
+.form-group-color-picker .color-input {
+    display: none;
+}
+
+.form-group-color-picker .color-label {
+    height: 18px;
+    width: 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorPickerLabelBorderColor);
+    margin-left: -1px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.form-group-color-picker .color-input:checked~.color-picker {
+    opacity: 1;
+    display: block;
+    z-index: 9;
+}
+
+.form-group-color-picker .color-picker {
+    position: absolute;
+    left: 15px;
+    background-color: var(--colorPickerCpBgColor);
+    height: 160px;
+    width: 198px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorPickerCpBorderColor);
+    opacity: 0;
+    display: none;
+    padding: 4px;
+    top: 30px;
+    background: var(--colorPickerCpColor);
+}
+
+.form-group-color-picker canvas:hover {
+    cursor: crosshair;
+}
+
+.form-group-color-picker .color-block,
+.form-group-color-picker .color-strip {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorPickerBlockBorderColor);
+}
+
+.form-group-color-picker .color-picker .btn {
+    position: absolute;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 9px;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+.form-group-color-picker .color-picker .btn-cancel {
+    margin-top: 30px;
+}
+
+.form-group-color-picker .color-picker .btn-select:before {
+    font-family: dfi;
+    content: "\e90a";
+    font-size: 8px;
+    color: var(--colorPickerBtnSelectColor);
+}
+
+.form-group-color-picker .color-picker .btn-cancel:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 8px;
+    color: #fff;
+}
+
+.form-group-color-picker .color-input-value {
+    min-width: 140px;
+    max-width: 140px;
+}
+
+.form-group-color-picker .input-group {
+    width: 220px;
+}
+
+.form-group-color-picker .clear {
+    right: 50px!important;
+}

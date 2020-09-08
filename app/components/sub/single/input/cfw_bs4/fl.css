@@ -1,0 +1,40 @@
+.form-group-input-text input.empty+.floating-label,
+.form-group-input-text input.empty+div+.floating-label {
+    display: block!important;
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    color: var(--inputTextFloatingLabelColor)!important
+}
+
+.form-group-input-text input.not-empty+.floating-label,
+.form-group-input-text input.not-empty+div+.floating-label {
+    display: none;
+}
+
+.form-group-input-text input:focus {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.form-group-input-text input:focus+.floating-label,
+.form-group-input-text input:focus+div+.floating-label {
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    display: block;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    width: calc( 100% - 30px);
+    background-color: var(--inputTextFloatingLabelBgColor);
+    padding: 2px;
+    color: var(--inputTextFloatingLabelColor)!important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--inputTextFloatingLabelBorderColor);
+    border-bottom-style: dashed;
+}

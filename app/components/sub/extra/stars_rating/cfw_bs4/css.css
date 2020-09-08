@@ -1,0 +1,157 @@
+/* FULL */
+
+.full-stars {
+    margin-left: -5px;
+    position: relative;
+}
+
+.full-stars .rating-group {
+    display: inline-flex;
+}
+
+.full-stars .rating__icon {
+    pointer-events: none;
+}
+
+.full-stars .rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+.full-stars .rating__label {
+    cursor: pointer;
+    padding: 0px;
+    padding-left: var(--starPadding);
+    padding-right: var(--starPadding);
+    font-size: var(--starSize);
+}
+
+.full-stars .rating__icon--star {
+    color: var(--starRatingActive);
+}
+
+.full-stars .rating__input:checked~.rating__label .rating__icon--star {
+    color: var(--starRatingUnactive);
+}
+
+.full-stars .rating-group:hover .rating__label .rating__icon--star {
+    color: var(--starRatingActive);
+}
+
+.full-stars .rating__input:hover~.rating__label .rating__icon--star {
+    color: var(--starRatingOverUnactive);
+}
+
+.full-stars .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+    color: var(--starRatingNone);
+}
+
+.full-stars .rating__icon--none {
+    color: var(--starRatingBan);
+}
+
+
+/*  HALF */
+
+.half-stars {
+    margin-left: -5px;
+    position: relative;
+}
+
+.half-stars .rating-group {
+    display: inline-flex;
+}
+
+.half-stars .rating__icon {
+    pointer-events: none;
+}
+
+.half-stars .rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+.half-stars .rating__label {
+    cursor: pointer;
+    padding: 0px;
+    padding-left: var(--starPadding);
+    padding-right: var(--starPadding);
+    font-size: var(--starSize);
+}
+
+.half-stars .rating__label.first-child {
+    padding: 0 0px;
+}
+
+.half-stars .rating__label--half {
+    padding-right: 0;
+    margin-right: var(--halfSize);
+    z-index: 2;
+}
+
+.half-stars .rating__icon--star {
+    color: var(--starRatingActive);
+}
+
+.half-stars .rating__icon--none {
+    color: var(--starRatingBan);
+}
+
+.half-stars .rating__input:checked~.rating__label .rating__icon--star {
+    color: var(--starRatingUnactive);
+}
+
+.half-stars .rating-group:hover .rating__label .rating__icon--star,
+.half-stars .rating-group:hover .rating__label--half .rating__icon--star {
+    color: var(--starRatingActive);
+}
+
+.half-stars .rating__input:hover~.rating__label .rating__icon--star,
+.half-stars .rating__input:hover~.rating__label--half .rating__icon--star {
+    color: var(--starRatingOverUnactive);
+}
+
+.half-stars .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+    color: var(--starRatingNone);
+}
+
+.icon-star:before {
+    font-family: dfi;
+    content: "\e91e";
+    font-size: var(--starSize);
+}
+
+.icon-star-half:before {
+    font-family: dfi;
+    content: "\e91f";
+    font-size: var(--starSize);
+    position: relative;
+}
+
+.icon-ban:before {
+    font-family: dfi;
+    content: "\e920";
+    font-size: var(--starSize);
+    position: relative;
+}
+
+i.icon-ban,
+i.icon-star,
+i.icon-star-half {
+    font-style: normal!important;
+    font-size: 14px;
+}
+
+.form-group-star-rating .badge {
+    font-weight: normal;
+    padding: 3px;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    background-color: var(--starRatingBadgeBgColor);
+    color: var(--starRatingBadgeColor);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--starRatingBadgeBorderColor);
+}

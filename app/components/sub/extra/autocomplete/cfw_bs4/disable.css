@@ -1,0 +1,3 @@
+.form-group-autocomplete .input-autocomplete[disabled]+.input-group-append {
+    display: none!important;
+}

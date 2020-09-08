@@ -1,0 +1,3 @@
+input[type='checkbox'][disabled][mode='SINGLE']+label {
+    cursor: not-allowed!important;
+}

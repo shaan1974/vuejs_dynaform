@@ -1,0 +1,26 @@
+body {
+    font-family: 'gidoleregular'!important;
+}
+
+body * {
+    font-family: 'gidoleregular'!important;
+}
+
+.fs-base {
+    font-size: 14px!important;
+}
+
+select,
+[type="checkbox"],
+[type="checkbox"]+label,
+[type="radio"],
+[type="file"],
+[type="radio"]+label,
+.custom-file-input,
+.custom-file {
+    cursor: pointer!important;
+}
+
+.cursor {
+    cursor: pointer;
+}

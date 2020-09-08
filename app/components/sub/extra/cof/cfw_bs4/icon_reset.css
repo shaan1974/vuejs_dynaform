@@ -1,0 +1,3 @@
+input[type='text'][mode='COF']+.clear {
+    right: 30px;
+}

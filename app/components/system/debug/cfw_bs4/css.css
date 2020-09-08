@@ -1,0 +1,20 @@
+.debugBar {
+    background-color: var(--debugBgColor);
+    text-align: center;
+    cursor: pointer;
+}
+
+.debugBar+div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--debugBgColor);
+    z-index: 99999;
+    width: 650px;
+    height: 100vh;
+}
+
+.debugBar+div pre {
+    overflow: scroll!important;
+    height: 100%!important;
+}

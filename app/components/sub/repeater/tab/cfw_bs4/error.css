@@ -1,0 +1,9 @@
+ul.val_error {
+    border-color: var(--valErrorBorderColor);
+    background-color: var(--valErrorBgColor1);
+    border-width: 1px;
+    border-style: solid;
+    height: 32px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}

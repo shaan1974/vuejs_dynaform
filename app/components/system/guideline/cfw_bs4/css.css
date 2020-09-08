@@ -1,0 +1,102 @@
+/*  ALL */
+
+.popover.custom {
+    font-size: 13px!important;
+    border-color: var(--glPopoverBgcolor);
+    -webkit-box-shadow: 3px 4px 7px -4px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 3px 4px 7px -4px rgba(0, 0, 0, 0.52);
+    box-shadow: 3px 4px 7px -4px rgba(0, 0, 0, 0.52);
+    position: absolute;
+    max-width: 240px;
+    z-index: 8!important;
+}
+
+.popover.custom .popover-body {
+    border-radius: 4px;
+}
+
+
+/*  TOP */
+
+.bs-popover-top.custom .arrow {
+    left: calc(50% - 16px);
+}
+
+.bs-popover-top.custom .popover-body {
+    background-color: var(--glBgColor);
+}
+
+.bs-popover-top.custom>.arrow::after {
+    border-top-color: var(--glBgColor);
+}
+
+
+/*  RIGHT */
+
+.bs-popover-right.custom .popover-body {
+    background-color: var(--glBgColor);
+}
+
+.bs-popover-right.custom>.arrow::after {
+    border-right-color: var(--glBgColor);
+}
+
+.bs-popover-right.custom .arrow {
+    top: calc(50% - 16px);
+}
+
+
+/*  BOTTOM  */
+
+.bs-popover-bottom.custom .popover-body {
+    background-color: var(--glBgColor);
+}
+
+.bs-popover-bottom.custom>.arrow::after {
+    border-bottom-color: var(--glBgColor);
+}
+
+.bs-popover-bottom.custom .arrow {
+    left: calc(50% - 16px);
+}
+
+
+/*  LEFT */
+
+.bs-popover-left.custom .popover-body {
+    background-color: var(--glBgColor);
+}
+
+.bs-popover-left.custom>.arrow::after {
+    border-left-color: var(--glBgColor);
+}
+
+.bs-popover-left.custom .arrow {
+    top: calc(50% - 16px);
+}
+
+.related-element {
+    background-color: var(--relatedElementBoxShadowBgColor);
+    box-shadow: 0 0 0 2px var(--relatedElementBoxShadowColor1), 1px 1px 1px 1px var(--relatedElementBoxShadowColor2);
+}
+
+th.related-element {
+    background-color: var(--relatedElementBoxShadowBgColor);
+    box-shadow: 0 0 0 0px var(--relatedElementBoxShadowColor1), 0px 0px 0px 0px var(--relatedElementBoxShadowColor2);
+}
+
+.related-element .related-element {
+    border: 1px dotted grey;
+}
+
+
+/* FIX */
+
+body.guidelines .modal-backdrop {
+    z-index: 1!important;
+}
+
+body.guidelines .form-group-toolbar.fixedTb button,
+body.guidelines .form-group-toolbar.fixedTb .validation-status {
+    display: none;
+}

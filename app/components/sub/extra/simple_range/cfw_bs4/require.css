@@ -1,0 +1,5 @@
+.range-slider__value.require {
+    background-image: var(--requireImage1)!important;
+    background-repeat: no-repeat!important;
+    background-position: right top!important;
+}

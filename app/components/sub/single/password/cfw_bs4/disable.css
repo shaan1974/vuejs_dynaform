@@ -1,0 +1,3 @@
+.form-group-map input[type='text'][disabled]+.input-group-append {
+    display: none;
+}

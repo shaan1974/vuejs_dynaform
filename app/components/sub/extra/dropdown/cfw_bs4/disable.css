@@ -1,0 +1,3 @@
+.form-group-dropdown button[disabled] {
+    cursor: not-allowed!important;
+}

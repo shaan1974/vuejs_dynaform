@@ -1,0 +1,20 @@
+input.val_error,
+textarea.val_error,
+select.val_error,
+table.val_error,
+div.val_error {
+    border-color: var(--valErrorBorderColor)!important;
+    background-color: var(--valErrorBgColor1)!important;
+}
+
+
+/*  RADIO - CHECKBOX : START */
+
+input[type='checkbox'].val_error+label,
+input[type='radio'].val_error+label {
+    border-color: var(--valErrorBorderColor);
+    background-color: var(--valErrorBgColor2);
+}
+
+
+/*  RADIO - CHECKBOX : END */

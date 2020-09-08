@@ -1,0 +1,5 @@
+.form-group-dropdown-cl button.val_error {
+    color: var(--valErrorColor);
+    border-color: var(--valErrorBorderColor)!important;
+    background-color: var(--valErrorBgColor1);
+}

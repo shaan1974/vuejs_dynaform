@@ -1,0 +1,48 @@
+*::-ms-clear {
+    display: none;
+}
+
+input[type='text']+.clear,
+input[type='number']+.clear,
+input[type='password']+.clear {
+    position: absolute;
+    float: right;
+    height: 20px;
+    width: 0px;
+    top: 4px;
+    right: 0px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+input[type='text']+.clear:before,
+input[type='number']+.clear:before,
+input[type='password']+.clear:before {
+    content: "\2716";
+    color: var(--clearIconColor);
+    font-size: 100%;
+    font-family: dfi;
+    content: "\e902";
+}
+
+input[type='text'][disabled]+.clear:before,
+input[type='number'][disabled]+.clear:before,
+input[type='password'][disabled]+.clear:before {
+    display: none;
+}
+
+.input-group-prepend+input[type='text']+.clear {
+    margin-right: 20px!important;
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}

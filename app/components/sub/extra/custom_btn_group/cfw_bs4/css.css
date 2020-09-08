@@ -1,0 +1,24 @@
+.form-group-button-grp button {
+    cursor: pointer;
+}
+
+.btn-group-icon-edit:before {
+    font-family: dfi;
+    content: "\e925";
+    font-size: 10px;
+    color: var(--btnRepeaterRemoveColor);
+}
+
+.btn-group-icon-remove:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 10px;
+    color: var(--btnRepeaterRemoveColor);
+}
+
+.btn-group-icon-clone:before {
+    font-family: dfi;
+    content: "\e91d";
+    font-size: 10px;
+    color: var(--btnRepeaterRemoveColor);
+}

@@ -1,0 +1,46 @@
+.form-group-single-checkbox .form-check {
+    position: relative;
+}
+
+
+/* https://codepen.io/jamesbarnett/pen/yILjk */
+
+.form-group-single-checkbox input[type=checkbox] {
+    display: none;
+}
+
+
+/* to hide the checkbox itself */
+
+.form-group-single-checkbox input[type=checkbox]+label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 20px;
+}
+
+.form-group-single-checkbox input[type=checkbox]+label:before {
+    font-family: dfi;
+    content: "\e913";
+}
+
+
+/* unchecked icon */
+
+.form-group-single-checkbox input[type=checkbox]+label:before {
+    letter-spacing: 10px;
+}
+
+
+/* space between checkbox and label */
+
+.form-group-single-checkbox input[type=checkbox]:checked+label:before {
+    font-family: dfi;
+    content: "\e912";
+}
+
+
+/* checked icon */
+
+.form-group-single-checkbox input[type=checkbox]:checked+label:before {
+    letter-spacing: 5px;
+}

@@ -1,0 +1,7 @@
+.rating-group.val_error {
+    border: 0px!important;
+    box-shadow: 0 0 0 1px var(--valErrorBorderColor)!important;
+    color: var(--valErrorColor);
+    border-color: var(--valErrorBorderColor)!important;
+    background-color: var(--valErrorBgColor1);
+}

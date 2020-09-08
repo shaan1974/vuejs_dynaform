@@ -1,0 +1,55 @@
+.input-mask {
+    font-family: monospace!important;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--inputMaskBgColor);
+    display: inline-block;
+    top: 2px;
+    position: relative;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.input-mask[disabled] {
+    background-color: var(--inputMaskDisabled);
+    cursor: not-allowed;
+    opacity: 1;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--inputMaskBgColor)!important;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+.input-mask-clear {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 24px;
+    height: 32px;
+    position: relative;
+    left: -4px;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    border: 1px solid #ced4da;
+    border-left: 0px;
+    top: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-mask-clear:before {
+    content: "\2716";
+    color: var(--clearIconColor);
+    font-size: 100%;
+    font-family: dfi;
+    content: "\e902";
+    position: relative;
+    top: 2px;
+}
+
+.input-mask:focus+.input-mask-clear {
+    border-color: #8EC9F7;
+    background-color: #F7F9FB;
+}

@@ -1,0 +1,5 @@
+label.col-form-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

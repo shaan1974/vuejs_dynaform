@@ -1,0 +1,96 @@
+.form-group-time-picker .input-group {
+    min-width: 160px;
+    max-width: 160px;
+}
+
+.form-group-time-picker .input-group-append {
+    cursor: pointer;
+}
+
+.form-group-time-picker .time-icon:before {
+    font-family: dfi;
+    content: "\e922";
+    font-size: 13px;
+}
+
+.form-group-time-picker input[mode='TIME'] {
+    text-align: center;
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+}
+
+
+/* CLOCKED */
+
+.clocklet-color-example {
+    background-color: var(--clockletColorBgColor);
+    border: none;
+}
+
+
+/* minute - dial, hand, selected tick, hovered tick */
+
+.clocklet-color-example .clocklet-dial--minute {
+    background-color: var(--clockletColorDialMinuteBgColor);
+}
+
+.clocklet-color-example .clocklet-hand--minute {
+    background-color: var(--clockletColorHandMinuteBgColor);
+}
+
+.clocklet-color-example .clocklet-tick--minute.clocklet-tick--selected {
+    background-color: var(--clockletColorTickMinuteSelectedBgColor);
+    color: var(--clockletColorTickMinuteSelectedColor);
+}
+
+.clocklet-color-example.clocklet--hoverable:not(.clocklet--dragging) .clocklet-tick--minute:hover {
+    background-color: var(--clockletColorHoverMinuteSelecteddBgColor);
+    color: var(--clockletColorHoverMinuteSelectedColor);
+}
+
+
+/* hour - dial, hand, selected tick, hovered tick */
+
+.clocklet-color-example .clocklet-dial--hour {
+    background-color: var(--clockletColorDialHourBgColor);
+}
+
+.clocklet-color-example .clocklet-hand--hour {
+    background-color: var(--clockletColorHandHourBgColor);
+}
+
+.clocklet-color-example .clocklet-tick--hour.clocklet-tick--selected {
+    background-color: var(--clockletColorTickHourSelectedBgColor);
+    color: var(--clockletColorTickHourSelectedColor);
+}
+
+.clocklet-color-example.clocklet--hoverable:not(.clocklet--dragging) .clocklet-tick--hour:hover {
+    background-color: var(--clockletColorHoverHourSelecteddBgColor);
+    color: var(--clockletColorHoverHourSelectedColor);
+}
+
+
+/* hand origin */
+
+.clocklet-color-example .clocklet-hand-origin {
+    background-color: var(--clockletColorHandOriginBgColor);
+}
+
+
+/* ampm */
+
+.clocklet-color-example .clocklet-ampm::before {
+    background-color: var(--clockletColorClockletAmpm1);
+}
+
+.clocklet-color-example .clocklet-ampm:hover::before {
+    background-color: var(--clockletColorClockletAmpm2);
+}
+
+.clocklet-color-example .clocklet-ampm[data-clocklet-ampm="pm"]::before {
+    background-color: var(--clockletColorClockletAmpm3);
+}
+
+.clocklet-color-example .clocklet-ampm[data-clocklet-ampm="pm"]:hover::before {
+    background-color: var(--clockletColorClockletAmpm4);
+}

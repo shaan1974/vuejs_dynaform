@@ -1,0 +1,3 @@
+.form-group-button-grp[disabled]>* {
+    opacity: 0.5
+}

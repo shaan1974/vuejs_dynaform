@@ -1,0 +1,12 @@
+.form-group-number-1 input[type='number']+.clear {
+    right: 8px;
+}
+
+.form-group-number-2 input[type='number']+.clear {
+    right: 8px;
+}
+
+.form-group-number-0+.clear,
+.form-group-number-0:focus+.clear {
+    right: 20px!important;
+}

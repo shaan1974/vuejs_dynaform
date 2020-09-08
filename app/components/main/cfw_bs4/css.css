@@ -1,0 +1,25 @@
+.modal-backdrop {
+    z-index: 1051!important;
+}
+
+.modal {
+    z-index: 1052!important;
+}
+
+#app>div.row>div[class*="form-group-"] {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#app>div.row>hr {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.col-form-label {
+    font-weight: bold;
+}

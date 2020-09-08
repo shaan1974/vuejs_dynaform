@@ -1,0 +1,199 @@
+.crop-wrapper {
+    background-color: var(--imageCrCropWrapperBgcolor);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+}
+
+.resize-container {
+    position: relative;
+    display: none;
+    cursor: move;
+    margin: 0 auto;
+}
+
+.resize-container-ontop {
+    position: absolute;
+    cursor: move;
+    background-color: var(--imageCrResizeContainerOntopBgColor);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.resize-container img {
+    display: block;
+}
+
+.resize-container:hover img,
+.resize-container:active img {
+    outline: 2px dashed var(--imageCrResizeContainerHoverActiveOutlineColor);
+}
+
+.resize-handle-ne,
+.resize-handle-se,
+.resize-handle-nw,
+.resize-handle-sw {
+    position: absolute;
+    display: block;
+    background: var(--imageCrResizeContainerHoverActiveOutlineColor);
+    z-index: 999;
+}
+
+.resize-handle-nw,
+.resize-handle-sw,
+.resize-handle-ne,
+.resize-handle-se {
+    cursor: se-resize;
+}
+
+.top-overlay {
+    z-index: 990;
+    background-color: var(--imageCrTopOverlayBgColor);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+
+.bottom-overlay {
+    z-index: 990;
+    background-color: var(--imageCrTopOverlayBgColor);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.right-overlay {
+    z-index: 990;
+    background-color: var(--imageCrTopOverlayBgColor);
+    width: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.left-overlay {
+    z-index: 990;
+    background-color: var(--imageCrTopOverlayBgColor);
+    width: 50%;
+    top: 50%;
+    right: 0px;
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    z-index: 999;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--imageCrOverlayBgColor);
+    box-sizing: content-box;
+    pointer-events: none;
+}
+
+
+/*
+.overlay:before {
+    top: 0;
+    margin-left: -2px;
+    margin-top: -40px;
+}
+
+.overlay:after {
+    bottom: 0;
+    margin-left: -2px;
+    margin-bottom: -40px;
+}
+
+.overlay-inner:before {
+    left: 0;
+    margin-left: -40px;
+    margin-top: -2px;
+}
+
+.overlay-inner:after {
+    right: 0;
+    margin-right: -40px;
+    margin-top: -2px;
+}
+*/
+
+
+/* INPUT FILE */
+
+.form-group-image-cr .input-group-append-sm .btn {
+    height: 32px;
+}
+
+.form-group-image-cr .warning-message {
+    color: var(--imageCrWarningColor);
+    background-color: var(--imageCrWarningBgColor);
+    border-color: var(--imageCrWarningBorderColor);
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 100%;
+    z-index: 4;
+    height: 32px;
+    border-radius: .25rem;
+    padding: 5px;
+    cursor: default;
+}
+
+.form-group-image-cr .icon-reset {
+    right: 58px;
+    top: 6px;
+    z-index: 6;
+}
+
+
+/* BTN */
+
+.form-group-image-cr .btn-crop::before {
+    font-family: dfi;
+    content: "\e91c";
+    font-size: 13px;
+    height: 30px;
+}
+
+.form-group-image-cr .btn {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--iamgeCrBtnBorder);
+}
+
+.effects-row {
+    margin-left: 10px;
+    width: 35%;
+}
+
+.badge-rotate-left::before {
+    font-family: dfi;
+    content: "\e921";
+    font-size: 13px;
+}
+
+.badge-rotate-right::before {
+    font-family: dfi;
+    content: "\e922";
+    font-size: 13px;
+}
+
+.btn-apply-effect::before {
+    font-family: dfi;
+    content: "\e900";
+    font-size: 13px;
+}
+
+.effect-td-1 {
+    margin-bottom: 10px;
+}
+
+.effect-td-2 {
+    vertical-align: top;
+}

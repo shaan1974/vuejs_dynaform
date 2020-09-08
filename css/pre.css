@@ -1,0 +1,23 @@
+pre {
+    overflow: auto;
+}
+
+pre .string {
+    color: #885800;
+}
+
+pre .number {
+    color: blue;
+}
+
+pre .boolean {
+    color: magenta;
+}
+
+pre .null {
+    color: red;
+}
+
+pre .key {
+    color: green;
+}

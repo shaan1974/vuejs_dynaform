@@ -1,0 +1,33 @@
+.custom-file-input~.custom-file-label::after {
+    font-family: dfi;
+    content: "\e906";
+    font-size: 13px;
+    background-color: var(--customFileInputCustomFileLabelAfterBgColor);
+    height: 30px;
+}
+
+.custom-file-label {
+    height: 32px;
+}
+
+.form-group-input-file .icon-reset {
+    position: absolute;
+    right: 42px;
+    top: 4px;
+    z-index: 6;
+}
+
+.form-group-input-file .warning-message {
+    color: var(--customFileWarningColor);
+    background-color: var(--customFileWarningBgColor);
+    border-color: var(--customFileWarningBorderColor);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 4;
+    height: 32px;
+    border-radius: .25rem;
+    padding: 5px;
+    cursor: default;
+}

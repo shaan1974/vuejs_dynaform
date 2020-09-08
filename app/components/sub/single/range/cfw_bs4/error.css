@@ -1,0 +1,3 @@
+input[type='range'].val_error+.input-group-append .input-group-text {
+    background-color: var(--valErrorBgColor1);
+}

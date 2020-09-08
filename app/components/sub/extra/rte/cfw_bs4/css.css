@@ -1,0 +1,74 @@
+.form-group-rte textarea {
+    font-size: 14px;
+}
+
+.form-group-rte .se-menu-list button {
+    cursor: pointer;
+}
+
+.form-group-rte .icon-empty:before {
+    font-family: dfi;
+    content: "\e919";
+    position: relative;
+}
+
+.form-group-rte .se-menu-list button i:before {
+    font-size: 13px;
+}
+
+.form-group-rte .sun-editor .se-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.form-group-rte .sun-editor {
+    width: 100%!important;
+}
+
+.form-group-rte .data-rte-counter {
+    font-weight: normal!important;
+    letter-spacing: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--dataCounterBorderColor);
+    background-color: var(--dataCounterBgColor);
+    padding: .2em .6em .3em;
+    font-size: 11px!important;
+    line-height: 1;
+    color: var(--dataCounterColor);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    float: right;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.form-group-rte .col-counter {
+    line-height: 4px;
+}
+
+.form-group-rte .sun-editor-editable {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.form-group-rte .sun-editor .se-btn:enabled:focus,
+.form-group-rte .sun-editor .se-btn:enabled:hover {
+    background-color: var(--rteBtnHoverBgColor);
+    color: var(--rteBtnHoverColor);
+    border-color: var(--rteBtnHoverBorderColor);
+    outline: 0 none;
+}
+
+.form-group-rte .se-notice {
+    color: var(--rteNoticeColor);
+    background-color: var(--rteNoticeBgColor);
+    border-color: var(--rteNoticeBorderColor);
+}
+
+.form-group-rte .warning-counter {
+    background-color: var(--rteNoticeBgColor);
+}

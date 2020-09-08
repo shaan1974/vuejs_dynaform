@@ -1,0 +1,3 @@
+.form-group-format .input-mask[disabled] {
+    background-color: var(--disabledgColor)!important;
+}

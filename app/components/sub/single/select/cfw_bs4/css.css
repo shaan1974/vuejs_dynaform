@@ -1,0 +1,47 @@
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    line-height: 12px;
+    z-index: 1;
+    position: relative;
+}
+
+select[multiple] {
+    background-color: var(--selectMultipleBgColor)!important;
+}
+
+fieldset[disabled] select {
+    background-color: var(--selectDisabledBgColor)!important;
+    opacity: 1;
+}
+
+select:not(disabled) {
+    background-color: transparent!important;
+}
+
+.select-warper {
+    background-color: var(--selectWarperBgColor);
+}
+
+.select-warper:after {
+    font-family: dfi;
+    content: "\e90c";
+    font-size: 10px;
+    color: var(--selectWarperAfterColor);
+    position: absolute;
+    background-color: transparent!important;
+    right: 20px;
+    top: 0px;
+    height: 30px;
+    border-radius: .2rem;
+    line-height: 29px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 0;
+}

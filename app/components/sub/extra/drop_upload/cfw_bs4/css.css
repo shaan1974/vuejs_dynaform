@@ -1,0 +1,78 @@
+.form-group-drop-upload {
+    position: relative
+}
+
+.drop_zone {
+    width: 100%;
+    background-color: var(--dropUploadDropZoneBgColor);
+    color: var(--dropUploadDropZoneColor);
+    padding: 10px 10px;
+    text-align: center;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: var(--dropUploadDropZoneBorderColor);
+}
+
+.drop_zone.over {
+    background-color: var(--dropUploadDropZoneOverBgColor);
+    color: var(--dropUploadDropZoneOverColor);
+    border-color: var(--dropUploadDropZoneOverBorderColor);
+}
+
+.table-files {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.table-files th,
+.table-files td {
+    padding: 4px;
+}
+
+.table-files th {
+    background-color: var(--dropUploadTableThBgColor);
+    color: var(--dropUploadTableThColor);
+    font-weight: normal;
+}
+
+.table-files td {
+    white-space: nowrap;
+}
+
+.table-files th:first-child,
+.table-files th:last-child {
+    width: 1%;
+}
+
+.table-files .btn-remove {
+    padding: 4px;
+    line-height: 10px;
+    width: 20px;
+}
+
+.table-files .btn-remove:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 8px;
+    left: 1px;
+    position: relative;
+}
+
+.form-group-drop-upload .no-files {
+    color: var(--dropUploadNoFileColor);
+    background-color: var(--dropUploadNoFileBgColor);
+    border-color: var(--dropUploadNoFileBorderColor);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form-group-drop-upload .alert-warning {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form-group-drop-upload .alert-warning ul {
+    padding-left: 20px;
+}

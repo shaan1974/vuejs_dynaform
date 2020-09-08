@@ -1,0 +1,14 @@
+textarea.val_error+div.sun-editor {
+    border-color: var(--valErrorBorderColor)!important;
+    background-color: var(--valErrorBgColor1);
+}
+
+textarea.val_error+div.sun-editor .se-toolbar {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: var(--valErrorBorderColor)!important;
+}
+
+textarea.val_error+div.sun-editor .se-wrapper .sun-editor-editable {
+    background-color: var(--valErrorBgColor1);
+}

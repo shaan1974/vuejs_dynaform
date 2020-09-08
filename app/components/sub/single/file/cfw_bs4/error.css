@@ -1,0 +1,4 @@
+input[type='file'].val_error+label.custom-file-label {
+    border-color: var(--valErrorBorderColor);
+    background-color: var(--valErrorBgColor2);
+}

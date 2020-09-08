@@ -1,0 +1,315 @@
+/*
+http://stripesgenerator.com/
+*/
+
+.form-group-toolbar {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.form-group-toolbar .card {
+    background-color: var(--toolBarCarBgColor);
+    padding-left: 1px;
+    padding-right: 1px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+}
+
+.form-group-toolbar .card .card-body {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.form-group-toolbar .validation-status {
+    display: inline-block;
+    background-color: var(--toolBarValidationStatusBgColor);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--toolBarValidationStatusBorderColor);
+    width: 24px;
+    text-align: center;
+    height: 23px;
+    line-height: 18px;
+    border-radius: 4px;
+}
+
+.validation-status-in-error {
+    background-color: var(--toolBarValidationStatusInError)!important;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px
+}
+
+.validation-status-in-error:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 9px;
+    color: var(--toolBarIconColor);
+    position: relative;
+    left: 2px;
+}
+
+.validation-status-no-error {
+    background-color: var(--toolBarValidationStatusNoError)!important;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px
+}
+
+.validation-status-no-error:before {
+    font-family: dfi;
+    content: "\e90a";
+    font-size: 9px;
+    color: var(--toolBarIconColor);
+    position: relative;
+    left: 1px;
+}
+
+.btn-tb-submit:before {
+    font-family: dfi;
+    content: "\e900";
+    font-size: 12px;
+    color: var(--toolBarIconColor);
+    margin-right: 4px;
+}
+
+.btn-tb-reset:before {
+    font-family: dfi;
+    content: "\e902";
+    font-size: 12px;
+    color: var(--toolBarIconColor);
+    margin-right: 4px;
+}
+
+.btn-tb-validate:before {
+    font-family: dfi;
+    content: "\e90d";
+    font-size: 12px;
+    color: var(--toolBarIconColor);
+    margin-right: 4px;
+}
+
+
+/*  FIXED TOOLBAR */
+
+.fixedTb {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+    height: 50px;
+    /*
+    -webkit-transition: position 1.5s ease;
+    -moz-transition: position 1.5s ease;
+    -o-transition: position 1.5s ease;
+    transition: position 1.5s ease;
+    */
+    margin-right: 0px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+.fixedTb .card {
+    padding-top: 5px;
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+
+/* MODAL */
+
+.modal-reset .btn-action:before {
+    font-family: dfi;
+    content: "\e900";
+    font-size: 12px;
+    color: var(--toolBarIconColor);
+    margin-right: 4px;
+}
+
+.modal-reset .btn-cancel:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 12px;
+    color: var(--toolBarIconColor);
+    margin-right: 4px;
+}
+
+.modal-reset {
+    padding-right: 17px
+}
+
+
+/*
+    SWITCH
+*/
+
+
+/* The switch - the box around the slider */
+
+
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+
+.switch {
+    float: right !important;
+    margin-right: 10px;
+    margin-top: 5px;
+    z-index: 1041;
+    position: relative;
+}
+
+.switch {
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+
+.no-switch {
+    padding-left: 5px;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--sliderBgColor);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--sliderBgColorBefore);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--inputCheckedSliderBgColor);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--inputFocusSliderBgColor);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.guideline_txt {
+    font-size: 11px;
+    margin-top: 8px;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    left: -2px;
+    font-weight: bold;
+}
+
+input[type='checkbox']:checked+.slider.round {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--inputCheckedSliderRoundBorderColor);
+}
+
+input[type='checkbox']:checked+.slider.round:before {
+    height: 11px;
+    width: 11px;
+    left: 0px;
+    bottom: 1px;
+}
+
+
+/*  TRANSITION */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .25s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+
+/*  BTN LG */
+
+.lg-btn-group {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.lg-btn-group .btn {
+    background-color: var(--toolBarBtnLgBgColor)!important;
+    color: var(--toolBarBtnLgColor);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--toolBarBtnLgBorderColor);
+}
+
+.lg-btn-group .btn.focus,
+.lg-btn-group .btn:focus {
+    color: var(--toolBarBtnLgColor);
+    box-shadow: 0 0 0 0.2rem var(--toolBarBtnLgBoxShadowColor)!important;
+}
+
+.lg-btn-group .dropdown-menu {
+    min-width: 48px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.lg-btn-group .dropdown-item {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+}
+
+.lg-btn-group .flag-icon {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--toolBarFlagIconBorderColor);
+    border-radius: 3px;
+    -webkit-filter: drop-shadow(1px 1px 1px var(--toolBarFlagIconDropShadow));
+    filter: drop-shadow(1px 1px 1px var(--toolBarFlagIconDropShadow));
+}

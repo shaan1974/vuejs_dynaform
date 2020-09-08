@@ -1,0 +1,78 @@
+.table-repeater-add-btn {
+    right: 10px;
+    position: absolute;
+}
+
+.card-tab-header {
+    min-height: 48px;
+}
+
+
+/* VERTICAL TAB */
+
+.v-tab {
+    display: inline-block;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.v-tab .card-header {
+    float: left;
+    /*flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+    position: relative;
+    width: 8.333333%;*/
+}
+
+.v-tab .card-header ul {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.v-tab .card-header ul .table-repeater-add-btn {
+    right: 5px;
+    position: absolute;
+    bottom: -38px;
+}
+
+.v-tab .card-body {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--vTableBorderColor);
+    float: right!important;
+    /*flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+    position: relative;
+    width: 91.666667%;*/
+}
+
+.v-tab .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: var(--vTableBorderColor);
+    border-radius: .2rem;
+}
+
+.v-tab .nav-tabs .nav-item {
+    padding-bottom: 5px;
+}
+
+
+/*  TAB */
+
+.form-group-static-tab .h-tab .nav-tabs .nav-link.active {
+    border-color: var(--staticTabMenuActiveBorderColor);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: var(--staticTabMenuActiveBorderBottomColor);
+}
+
+.v-tab .text-no-entries {
+    height: 48px;
+    background-color: var(--repeaterTabVtabNoEntriesBgColor);
+    padding-top: 14px;
+}
+
+.v-tab .btn-no-entries-yet {
+    bottom: 7px!important;
+    z-index: 1;
+}

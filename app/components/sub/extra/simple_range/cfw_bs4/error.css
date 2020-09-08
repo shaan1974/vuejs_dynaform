@@ -1,0 +1,4 @@
+.range-slider.val_error {
+    border: 0px!important;
+    box-shadow: 0 0 0 1px var(--valErrorBorderColor)!important
+}

@@ -1,0 +1,5 @@
+textarea.require+div.sun-editor .se-toolbar {
+    background-image: var(--requireImage1);
+    background-repeat: no-repeat;
+    background-position: right top;
+}

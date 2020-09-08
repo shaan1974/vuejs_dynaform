@@ -1,0 +1,4 @@
+.form-group-input-text .input-group .input-group-prepend+input {
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}

@@ -1,0 +1,56 @@
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575.98px) {
+    #app.debug>div.row>div[class*="form-group-"] {
+        background-color: pink;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    #app.debug>div.row>div[class*="form-group-"] {
+        background-color: rgb(252, 145, 145, 0.1);
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+    #app.debug>div.row>div[class*="form-group-"] {
+        background-color: rgb(140, 140, 243, 0.1);
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #app.debug>div.row>div[class*="form-group-"] {
+        background-color: rgb(207, 107, 207, 0.1);
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    #app.debug>div.row>div[class*="form-group-"] {
+        background-color: rgb(226, 184, 107, 0.1);
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

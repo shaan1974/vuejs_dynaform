@@ -1,0 +1,4 @@
+.table-static,
+.table-static .form-group.row {
+    margin-bottom: 0px!important;
+}

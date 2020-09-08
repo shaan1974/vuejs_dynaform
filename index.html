@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <title>DynaForm</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="ressources/favico/favicon.png">
+    <!--[if IE]><link rel="shortcut icon" href="ressources/favico/favicon.ico"/><![endif]-->
+    <link rel="shortcut icon" href="ressources/favico/favicon.ico" type="image/x-icon" />
+
+    <!-- DEPENDECIES -->
+
+    <!-- CSS ***************************************************************************************************************************************************************************** -->
+
+    <!--    DEPENDENCIES -->
+    <script src="https://unpkg.com/core-js-bundle@3.6.5/minified.js"></script>
+
+    <script src="dependecies/msie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2.3.0/dist/css-vars-ponyfill.min.js"></script>
+
+    <!--        AXOIS   -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--        MAP : LEAFLET   -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css">
+
+    <!--        MAP : LEAFLET PLUGIN - FULLSCREEN   -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.css">
+
+    <!--        MAP : LEAFLET PLUGIN - GEOMAN   -->
+    <script src="dependecies/leaflet/plugin/geoman/assets/lg/fr.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.5.0/dist/leaflet-geoman.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.5.0/dist/leaflet-geoman.min.js"></script>
+
+    <!--        MAP : TURF   -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+
+    <!--        MAP : LEAFLET PLUGIN - EASYBUTTON   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.EasyButton/2.4.0/easy-button.min.js"></script>
+
+    <!--        MAP : LEAFLET MARKER-CLUSTER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+
+    <!--        MAP : LEAFLET ZOOM-INFO -->
+    <script src="dependecies/leaflet/plugin/Leaflet.zoominfo/L.Control.Zoominfo.js"></script>
+    <link rel="stylesheet" href="dependecies/leaflet/plugin/Leaflet.zoominfo/L.Control.Zoominfo.css" />
+
+
+    <!--        MOMENTJS -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.25.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.25.0/locale/fr.js"></script>
+
+    <script>
+        moment.locale('fr');
+    </script>
+
+    <!--        SUN EDITOR -->
+    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <!--<script src="dependecies/suneditor.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/fr.js"></script>
+
+    <!--        AUTONUMERIC -->
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.6.0/dist/autoNumeric.min.js"></script>
+
+    <!--        CLOCKLET -->
+    <link href="https://cdn.jsdelivr.net/npm/clocklet@0.2.6/css/clocklet.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/clocklet@0.2.6/umd/clocklet.min.js"></script>
+
+    <!--    CSS FRAME WORK -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--    CSS FLAG ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.4.6/css/flag-icon.min.css">
+
+    <!--    CSS CHARTS-JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+
+    <!--    CSS - ALL -->
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/pre.css">
+
+    <!--    CSS - BS4 -->
+    <link rel="stylesheet" href="css/cfw_bs4/_vars.css">
+    <link rel="stylesheet" href="css/cfw_bs4/_colors.css">
+    <link rel="stylesheet" href="css/cfw_bs4/focus.css">
+    <link rel="stylesheet" href="css/cfw_bs4/require.css">
+    <link rel="stylesheet" href="css/cfw_bs4/icon_reset.css">
+    <link rel="stylesheet" href="css/cfw_bs4/fade.css">
+    <link rel="stylesheet" href="css/cfw_bs4/placeholder.css">
+    <link rel="stylesheet" href="css/cfw_bs4/list.css">
+    <link rel="stylesheet" href="css/cfw_bs4/icons.css">
+    <link rel="stylesheet" href="css/cfw_bs4/size.css">
+    <link rel="stylesheet" href="css/cfw_bs4/overwrite.css">
+    <link rel="stylesheet" href="css/cfw_bs4/margin.css">
+    <link rel="stylesheet" href="css/cfw_bs4/text.css">
+
+    <!--    CSS CUSTOM FONT AND ICONS -->
+    <link rel="stylesheet" href="css/dfi/style.css">
+
+    <!--    CSS CUSTOM MAP-ICONS -->
+    <link rel="stylesheet" href="css/map-icons/style.css">
+
+    <!--    CSS CUSTOM FONT -->
+    <link rel="stylesheet" href="dependecies/webfontkit-20151210-050848/stylesheet.min.css">
+
+    <!-- DATA : SYSTEM -->
+    <script src="app/_data/_system/labels_fr.js"></script>
+
+    <!-- DATA : DEDICATE -->
+    <script src="app/_data/full/app_config.js"></script>
+    <script src="app/_data/full/app_data.js"></script>
+    <script src="app/_data/full/app_schema.js"></script>
+    <script src="app/_data/full/app_labels_fr.js"></script>
+    <script src="app/_data/full/app_dictionnaries.js"></script>
+    <script src="app/_data/full/app_validation.js"></script>
+    <script src="app/_data/full/app_prop_status.js"></script>
+    <script src="app/_data/full/app_behaviour.js"></script>
+
+    <script>
+        //  MERGE SYSTEM LABEL WITH DEDICATE LABELS
+        //
+        app_labels = Object.assign(app_labels, app_system_labels)
+    </script>
+
+    <!-- VUE ***************************************************************************************************************************************************************************** -->
+    <!--<script src="vue.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script>
+        // Before you create app
+        // Vue.config.devtools = process.env.NODE_ENV === 'development'
+
+        // After you create app
+        // window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = app.constructor
+
+        // then had to add in ./store.js as well.
+        // Vue.config.devtools = process.env.NODE_ENV === 'development'
+    </script>
+
+    <!-- FILES -->
+    <script src="files.js"></script>
+
+    <script>
+        var timestamp = false;
+        var dt = new Date();
+
+        files.forEach(
+            function(d) {
+
+                if (d.indexOf(".js") !== -1) {
+                    var fileref = document.createElement('script')
+                    fileref.setAttribute("type", "text/javascript")
+                    fileref.setAttribute("src", d)
+                    fileref.async = false;
+
+                } else if (d.indexOf(".css") !== -1) {
+
+                    var fileref = document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+
+                    if (timestamp === false) {
+                        fileref.setAttribute("href", d + "");
+                    } else {
+                        fileref.setAttribute("href", d + "?d=" + dt.toGMTString());
+                    }
+
+                    fileref.async = false;
+                }
+
+                try {
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+                } catch (e) {}
+            })
+    </script>
+
+</head>
+
+<body>
+
+    <!-- BASE ON https://jsfiddle.net/reardestani/0mg1v81e/254/ -->
+
+    <br/>
+    <div class="container fs-base">
+
+        <div class="card mb-m40px">
+
+            <div class="card-body pb-0">
+
+                <div id="app">
+                    <form-generator :schema="schema" v-model="formData" ref="FORM-GENERATOR"></form-generator>
+
+                    <div class="card" v-if="config.debugMode === true">
+                        <div class="card-body">
+                            <br/>
+                            <br/>
+                            <debug_extra :dvar="formData"></debug_extra>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br/>
+
+</body>
+
+</html>

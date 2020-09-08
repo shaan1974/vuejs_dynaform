@@ -1,0 +1,57 @@
+.form-group-cof .input-group-sm input[type='text'] {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.form-group-cof .input-group-append {
+    height: 31px!important;
+}
+
+.form-group-cof .input-group-append .cof-icon {
+    height: 31px!important;
+}
+
+.cof-icon {
+    display: block;
+    width: 28px;
+    height: 16px;
+    background-position: 6px!important;
+    background-color: var(--cofIconBgColor)!important;
+    cursor: pointer;
+}
+
+.cof-icon:before {
+    font-family: dfi;
+    content: "\e90b";
+    font-size: 13px;
+    left: -2px;
+    position: relative;
+}
+
+.cof-choices {
+    position: absolute;
+    right: 42px;
+    top: 0px;
+    z-index: 999;
+}
+
+.cof-choices a:first-child {
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+}
+
+.cof-choices a {
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+}
+
+.form-group-cof .input-group-append .input-group-text {
+    border-top-right-radius: .2rem!important;
+    border-bottom-right-radius: .2rem!important;
+}
+
+.cof-choices a:hover {
+    color: var(--cofChoicesAhoverColor);
+    background-color: var(--cofChoicesAhoverBgColor);
+    border-color: var(--cofChoicesAhoverBorderColor);
+}

@@ -1,0 +1,6 @@
+  input[type=checkbox][mode='SINGLE'].require+label {
+      padding-right: 15px;
+      background-image: var(--requireImage1);
+      background-repeat: no-repeat;
+      background-position: right top;
+  }

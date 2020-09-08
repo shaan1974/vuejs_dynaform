@@ -1,0 +1,3 @@
+.form-group-container[disabled] {
+    opacity: 0.5;
+}

@@ -1,0 +1,12 @@
+select[multiple]+div.required {
+    background-image: var(--requireImage1);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    transform: scaleX(-1);
+}

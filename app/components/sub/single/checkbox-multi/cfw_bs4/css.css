@@ -1,0 +1,66 @@
+.form-group-multi-checkbox .form-check {
+    position: relative;
+}
+
+
+/* https://codepen.io/jamesbarnett/pen/yILjk */
+
+.form-group-multi-checkbox input[type=checkbox] {
+    display: none;
+}
+
+
+/* to hide the checkbox itself */
+
+.form-group-multi-checkbox input[type=checkbox]+label:before {
+    font-family: dfi;
+    content: "\e913";
+    display: inline-block;
+    width: 20px;
+}
+
+
+/* unchecked icon */
+
+.form-group-multi-checkbox input[type=checkbox]+label:before {
+    letter-spacing: 10px;
+}
+
+
+/* space between checkbox and label */
+
+.form-group-multi-checkbox input[type=checkbox]:checked+label:before {
+    font-family: dfi;
+    content: "\e912";
+}
+
+
+/* checked icon */
+
+.form-group-multi-checkbox input[type=checkbox]:checked+label:before {
+    letter-spacing: 5px;
+}
+
+
+/* select - unselect hoz and vert */
+
+.all-notall.form-check-inline b {
+    margin-left: 5px;
+}
+
+.all-notall.form-check-not-inline {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--checkboxMultiSepatarorColor);
+    margin-bottom: 5px;
+}
+
+.form-check-not-inline .form-check-label {
+    width: 100%;
+}
+
+.form-check-not-inline .form-check-label:hover {
+    background-color: var(--checkboxMultiNotInlineHoverBgColor);
+    cursor: pointer;
+    transition: all .3s ease;
+}

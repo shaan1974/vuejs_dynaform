@@ -1,0 +1,321 @@
+/*
+	https://codepen.io/aaronbarker/pen/MeaRmL
+*/
+
+:root {
+    /*  SYSTEM --------------------------------------------------------------------------------------------------------------- */
+    /*      MODAL   */
+    --modalErrorLiColor: #721c24;
+    /*      TOOLBAR */
+    --toolBarCarBgColor: #f9f9f9;
+    /*      TOOLBAR - VALIDATION STATUS */
+    --toolBarValidationStatusBgColor: #f9f9f9;
+    --toolBarValidationStatusBorderColor: #ced4da;
+    /*      TOOLBAR - VALIDATION STATUS IN ERROR */
+    --toolBarValidationStatusInError: #dc3545;
+    /*      TOOLBAR - VALIDATION STATUS NO ERROR */
+    --toolBarValidationStatusNoError: #28a745;
+    /*      TOOLBAR - ICON */
+    --toolBarIconColor: #ffffff;
+    --toolBarBtnLgBgColor: #9b59b6;
+    --toolBarBtnLgColor: #fff;
+    --toolBarBtnLgBorderColor: #7A5489;
+    --toolBarBtnLgBoxShadowColor: rgba(169, 117, 179, 0.5);
+    --toolBarFlagIconBorderColor: #e1aaf8;
+    --toolBarFlagIconDropShadow: #777;
+    --spinnerBorderColor1: rgba(0, 174, 239, 0.2);
+    --spinnerBorderColor2: rgba(0, 174, 239, 0.8);
+    /*      GUIDELINES */
+    --glBgColor: #f9f9f9;
+    --glPopoverBgcolor: #dedede;
+    --relatedElementBoxShadowBgColor: rgba(0, 123, 255, .25);
+    --relatedElementBoxShadowColor1: #8cbfff;
+    --relatedElementBoxShadowColor2: #ffffff;
+    --sliderBgColor: #ccc;
+    --sliderBgColorBefore: white;
+    --inputCheckedSliderBgColor: #2196F3;
+    --inputFocusSliderBgColor: #2196F3;
+    --inputCheckedSliderRoundBorderColor: #fff;
+    /*      FOOTER */
+    --footerBgColor: #666666;
+    --footerColor: #fff;
+    /*      BTT */
+    --bttBgColor: #fff;
+    --bttButtonBeforeColor: #000;
+    /*      DISPLAY MODE */
+    --displayModeBgColor: #f8f8f8;
+    --displayModeColor: #000;
+    --displayModeBorderColor: rgba(0, 0, 0, .125);
+    /*      DEBUG */
+    --debugBgColor: pink;
+    /*      TREEVIEW */
+    --treeviewColor: #bdbdbd;
+    --treeviewBorderLeftColor: rgb(189, 189, 189);
+    --treeviewBlockHideColor: #ffffff;
+    --treeviewMenuColor: #000000;
+    --treeviewMenuActiveColor: #fff;
+    --treeviewMenuActiveBgColor: #9b59b6;
+    --treeviewMenuActiveHoverBgColor: rgba(155, 89, 182, 0.5);
+    ;
+    /*  COMPONENT ------------------------------------------------------------------------------------------------------------ */
+    /*      EXTRA */
+    /*              AUTOCOMPLETE */
+    --autocompleteIconBgColor: #e9ecef;
+    --autocompleteIconClearBgColor: #e9ecef;
+    --autocompleteChoicesBottomBorderColor: #8EC9F7;
+    --autocompleteChoicesAhrefHoverColor: #fff;
+    --autocompleteChoicesAhrefHoverBgColor: #007bff;
+    --autocompleteChoicesAhrefHoverBorderColor: #007bff;
+    --autocompleteChoicesAhrefHoverAutocompleteFoundBorderColor: #fff;
+    --autocompleteFoundBgColor: #218838;
+    --autocompleteFoundColor: #fff;
+    --autocompleteFoundBorderColor: #218838;
+    --autocompleteIconResetBgColor: #ffffff;
+    /*              COF */
+    --cofIconBgColor: #e9ecef;
+    --cofChoicesAhoverBgColor: #007bff;
+    --cofChoicesAhoverColor: #fff;
+    --cofChoicesAhoverBorderColor: #007bff;
+    /*              DROPDOWN */
+    --dropdownMenuButtonHoverColor: #fff;
+    --dropdownMenuButtonHoverBgColor: #007bff;
+    --dropdownMenuButtonHoverBorderColor: #007bff;
+    /*              INPUT MASK */
+    --inputMaskBgColor: #ced4da;
+    --inputMaskDisabled: #eee;
+    /*              DATEPICKER */
+    --datePickerLayoutBorderColor: #8EC9F7;
+    --datePickerLayoutHeaderbgColor: #686868;
+    --datePickerLayoutHeaderColor: #ffffff;
+    --datePickerBodyBgcolor: #ffffff;
+    --datePickerCalendarDayBorderColor: #f9f9f9;
+    --datePickerCalendarDayColor: #606060;
+    --datePickerCalendarDayDisabledBgColor: #f3f3f3;
+    --datePickerCalendarDaySelectedBgColor: rgba(38, 143, 255, .5);
+    --datePickerCalendarDaySelectedColor: #fff;
+    --datePickerCalendarDayAfterBgColor: #007bff;
+    --datePickerCalendarDayHoverBorderColor: #0062cc;
+    --datePickerCalendarDaySelectedDisabledBgColor: #d1deff;
+    --datePickerCalendarDayTodayBorderColor: #28a745;
+    --datePickerCalendarDayUnselectColor: #fff;
+    --datePickerCalendarDayUnselectBgColor: #313235;
+    --datePickerCalendarDayUnselectStrikerColor: #fff;
+    --datePickerCalendarDaysLayoutBgColor: #202020;
+    --datePickerCalendarDaysLayoutBorderColor: #fff;
+    --datePickerCalendarDaysGoBgColor: #4b4b4b;
+    --datePickerCalendarDaysGoBgColorHover: #b0b0b0;
+    --datePPickerMonthsBgColor: #202020;
+    --datePPickerMonthsTableBgColor: #ffffff;
+    --datePPickerMonthsTableTdHoverBgColor: #eaeaea;
+    --datePPickerMonthsTableTdHoverColor: #000000;
+    --datePPickerMonthsTableTdSelectedBgColor: rgba(38, 143, 255, .5);
+    --datePPickerMonthsTableTdSelectedColor: #ffffff;
+    /*              RTE */
+    --rteBtnHoverColor: #fff;
+    --rteBtnHoverBgColor: #777676;
+    --rteBtnHoverBorderColor: #d1d1d1;
+    --rteNoticeColor: #856404;
+    --rteNoticeBgColor: #fff3cd;
+    --rteNoticeBorderColor: #ffeeba;
+    /*              DOUBLE SLIDE */
+    --doubleSliderRangeBgColor: #ddd;
+    --doubleSliderRangeBorderColor: #999;
+    --doubleSliderRangeButtonBgColor: #f7f7f7;
+    --doubleSliderRangeButtonBorderColor: #999;
+    --doubleSliderRangeButtonActiveBgColor: #fff;
+    --doubleSliderRangeButtonActiveBorderColor: #28a745;
+    --doubleSliderRangeButtonFocusBgColor: #28a745;
+    --doubleSliderRangeInputColor: #495057;
+    --doubleSliderRangeInputBgColor: #fff;
+    --doubleSliderRangeInputBorderColor: #ced4da;
+    --doubleSliderRangeHrBorderColor: #ced4da;
+    /*              DROP UPLOAD */
+    --dropUploadDropZoneBgColor: #f2f2f2;
+    --dropUploadDropZoneColor: #000;
+    --dropUploadDropZoneBorderColor: #999;
+    --dropUploadTableThBgColor: #999;
+    --dropUploadTableThColor: #ffffff;
+    --dropUploadNoFileBgColor: #cce5ff;
+    --dropUploadNoFileColor: #004085;
+    --dropUploadNoFileBorderColor: #b8daff;
+    --dropUploadDropZoneOverBgColor: #32c325;
+    --dropUploadDropZoneOverColor: #fff;
+    --dropUploadDropZoneOverBorderColor: #21880f;
+    /*              PRECALULATED */
+    --precalulatedBorerColor: #ced4da;
+    --precalulatedBgColor: #f2f2f2;
+    /*              SIMPLE RANGE */
+    --rangeSliderRangeBgColor: #d7dcdf;
+    --rangeSliderRangeThumbBgColor: #2c3e50;
+    --rangeSsliderRangeActiveHoverBgColor: #1abc9c;
+    --rangeSliderValueColor: #000;
+    --rangeSliderValueBgColor: #e9ecef;
+    --rangeSliderValueC1: #d7dcdf;
+    --rangeSliderbeforeBgColor: rgba(184, 184, 184, 0.7);
+    /*              IMAGE CR */
+    --imageCrCropWrapperBgcolor: rgba(255, 255, 255, 1);
+    --imageCrResizeContainerOntopBgColor: rgba(5, 255, 5, 0);
+    --imageCrResizeContainerHoverActiveOutlineColor: rgba(0, 0, 0, .9);
+    --imageCrTopOverlayBgColor: rgba(222, 222, 222, .6);
+    --imageCrOverlayBgColor: rgba(222, 222, 222, .9);
+    --imageCrWarningBgColor: #fff3cd;
+    --imageCrWarningColor: #856404;
+    --imageCrWarningBorderColor: #ffeeba;
+    --iamgeCrBtnBorder: rgba(0, 0, 0, .125);
+    /*              COLOR */
+    --colorPickerLabelBorderColor: #a9adb1;
+    --colorPickerCpBorderColor: #ced4da;
+    --colorPickerCpColor: #e9ecef;
+    --colorPickerCpBgColor: white;
+    --colorPickerBlockBorderColor: #ced4da;
+    --colorPickerBtnSelectColor: #ddd;
+    /*              CAPTCHA */
+    --captchaBorderColor: #fff;
+    /*              STAR RATING */
+    --starRatingBadgeBgColor: #e9ecef;
+    --starRatingBadgeBorderColor: #bbb;
+    --starRatingBadgeColor: #000;
+    --starRatingActive: orange;
+    --starRatingUnactive: #ddd;
+    --starRatingOverUnactive: #ddd;
+    --starRatingNone: #ddd;
+    --starRatingBan: rgb(199, 32, 32);
+    /*              TIMEPICKER */
+    --clockletColorBgColor: #eaeaea;
+    --clockletColorDialMinuteBgColor: #ddd;
+    --clockletColorHandMinuteBgColor: #000;
+    --clockletColorTickMinuteSelectedBgColor: #000;
+    --clockletColorTickMinuteSelectedColor: #fff;
+    --clockletColorHoverMinuteSelecteddBgColor: #fff;
+    --clockletColorHoverMinuteSelectedColor: #000;
+    --clockletColorDialHourBgColor: #eaeaea;
+    --clockletColorHandHourBgColor: #fff;
+    --clockletColorTickHourSelectedBgColor: #fff;
+    --clockletColorTickHourSelectedColor: #000;
+    --clockletColorHoverHourSelecteddBgColor: #000;
+    --clockletColorHoverHourSelectedColor: #fff;
+    --clockletColorHandOriginBgColor: #000;
+    --clockletColorClockletAmpm1: #28a745;
+    --clockletColorClockletAmpm2: #3cd05e;
+    --clockletColorClockletAmpm3: #007bff;
+    --clockletColorClockletAmpm4: #5eaaff;
+    /*              MULTI COMPLETE */
+    --multiCompleteBadgeValueColor: #000;
+    --multiCompleteBadgeValueBorderColor: #bbb;
+    --multiCompleteBadgeValueBgColor: #f4f4f4;
+    --multiCompleteBadgeRemoveIconBgColor: #959595;
+    --multiCompleteBadgeRemoveIconBorderColor: #bbb;
+    --multiCompleteBadgeRemoveIconBeforeColor: #fff;
+    /*              MAP */
+    --mapIconBgColor: #e9ecef;
+    --mapBgColor: #fafafa;
+    --mapBorderColor: #ced4da;
+    --mapButtonBgColor: #ffffff;
+    --mapButtonHoverBgColor: #f4f4f4;
+    --mapPopupCloseBtnBgColor: #989898;
+    --mapPopupCloseBtnColor: #ffffff;
+    --mapPopupEditBtnBgColor: #ffffff;
+    --mapPopupEditBtnBorderColor: #9c9c9c;
+    --mapPopupUpdateOverlayBgColor: #4a4a4a;
+    --mapPopupUpdateContenInsideBgColor: #fdfdfd;
+    --mapPopupUpdateContenInsideBorderColor: #dddddd;
+    --mapPopupUpdateBtnGroupBorderColor: #dae0e5;
+    --mapPopupUpdateBtnGroupColor: #212529;
+    --mapPopupUpdateBtnGroupBgColor: #f8f9fa;
+    --mapPopupUpdateBtnGroupTbIconColor: #000;
+    --mapPopupPreviewHtmlBgColor: #ffffff;
+    --mapPopupPreviewBeforeBgColor: #eaeaea;
+    --mapPopupPreviewBeforeBorderColor: #ddd;
+    --mapResetValueHoverBgColor: white;
+    --mapResetValueHoverBorderColor: #000;
+    --mapRemindBgColor: #EAEAEA;
+    --mapReminderBorderColor: #bbb;
+    /*      HELPER */
+    /*              CONTAINER */
+    --formGroupContainerCard: #f9f9f9;
+    /*      REPEATER */
+    /*              TABLE */
+    --rstableBorderColor: #ddd;
+    --rstableTheadTrThBorderColor: #ddd;
+    --rstableTrNthChildOddTdBgColor: #f9f9f9;
+    --rstableTrNthChildEvenTdBgColor: #ffffff;
+    --rstableTrBgColor: #f9f9f9;
+    --rstableTrBorderColor: #ddd;
+    --rstableThLastChildBgColor: orange;
+    --mediaRstableTbodyTrTdFirstChildBgColor: #6b6b6b;
+    --mediaRstableTbodyTrTdFirstChildColor: #fff;
+    --mediaRstableTrNthChildOddTdBgColor: #f9f9f9;
+    --mediaRstableTrNthChildEvenTdBgColor: #f9f9f9;
+    --mediaRstableTrBgColor: #ddd;
+    --mediaRstableTdBgColor: #ddd;
+    --vTableBorderColor: #dee2e6;
+    --vTableNumBgColor: #f3f3f3;
+    --btnRepeaterAddColor: #fff;
+    --btnRepeaterRemoveColor: #fff;
+    --repeaterTableVerticalNoeBorderColor: #ced4da;
+    /*              TAB */
+    --repeaterTabVtabNoEntriesBgColor: #f7f7f7;
+    /*      SINGLE */
+    /*          INPUT-TEXT */
+    --inputTextFloatingLabelColor: #ababab;
+    --inputTextFloatingLabelBgColor: #edf7ff;
+    --inputTextFloatingLabelBorderColor: #8EC9F7;
+    /*          INPUT-FILE */
+    --customFileInputCustomFileLabelAfterBgColor: #e9ecef;
+    --customFileIconResetBgColor: #e9ecef;
+    --customFileIconResetBorderColor: #ced4da;
+    --customFileWarningBgColor: #fff3cd;
+    --customFileWarningColor: #856404;
+    --customFileWarningBorderColor: #ffeeba;
+    /*          PASSWORD */
+    --formGroupPasswordPpasswordIconBgColor: #e9ecef;
+    --formGroupPasswordProgressBarBgColor: #ced4da;
+    /*          RANGE */
+    --inputGroupCustomRangeBorderColor: #ced4da;
+    --inputGroupCustomRangeFocusBgColor: #fff;
+    --inputGroupCustomRangeFocusBorderColor: transparent;
+    /*          SELECT */
+    --selectWarperBgColor: #ffffff;
+    --selectWarperAfterColor: #000;
+    --selectMultipleBgColor: #ffffff;
+    --selectDisabledBgColor: #e9ecef;
+    /*          TEXTAREA */
+    --textareaClearBtnBgColor: #f7f9fb;
+    --textareaClearBtnBorderColor: #ced4da;
+    /*          CHECBOXES MULTI */
+    --checkboxMultiSepatarorColor: #ced4da;
+    --checkboxMultiNotInlineHoverBgColor: #cecece;
+    /*      STATIC */
+    /*          FIELDSET */
+    --fieldsetSchedulerBorderBorderColor: rgba(0, 0, 0, .125);
+    --legendSchedulerBorderBorderColor: rgba(0, 0, 0, .125);
+    /*          TAB */
+    --staticTabMenuActiveBorderColor: #dee2e6;
+    --staticTabMenuActiveBorderBottomColor: #fff;
+    /*  DIRECTIVES ----------------------------------------------------------------------------------------------------------- */
+    /*      MAX LENGTH */
+    --dataCounterBgColor: #F7F9FB;
+    --dataCounterColor: #171717;
+    --dataCounterBorderColor: #ced4da;
+    --TextareaFocusDivBorderColor: #8EC9F7;
+    /*      VALIDATE */
+    --valErrorBorderColor: #ffadad;
+    --valErrorBgColor1: #fff4f4;
+    --valErrorBgColor2: #f5c4c4;
+    --valErrorColor: #000;
+    /*      INPUT DISABLED */
+    --disabledgColor: #e9ecef;
+    /*  MIXINS ----------------------------------------------------------------------------------------------------------------- */
+    /*      CLEAR */
+    --clearIconColor: #999999;
+    /*      DYNAMIC TABLE */
+    --dynamicTableIconPagingColor: #000;
+    --dynamicTableIconSortNoneColor: #bbbbbb;
+    --dynamicTableEntriesBgColor: #e9ecef;
+    --dynamicTableIconSortColor: #000;
+    --dynamicTablePageItemDisabledBgColor: #eaeaea;
+    --dynamicTablePageItemDisabledBgColor2: #d6d5d2;
+    --dynamicHighlightBgColor: #28a745;
+    --dynamicHighlightColor: #fff;
+    --dynamicTableBackDropLoaderBgColor: rgba(197, 197, 197, 0.582);
+}

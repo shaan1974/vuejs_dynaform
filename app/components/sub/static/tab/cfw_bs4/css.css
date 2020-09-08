@@ -1,0 +1,6 @@
+.form-group-static-tab .nav-tabs .nav-link.active {
+    border-color: var(--staticTabMenuActiveBorderColor);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: var(--staticTabMenuActiveBorderBottomColor);
+}

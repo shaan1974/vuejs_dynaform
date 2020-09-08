@@ -1,0 +1,48 @@
+.input-group-sm input[type='password']+div.input-group-append .input-group-text,
+.input-group-sm input[type='text']+div.input-group-append .input-group-text {
+    height: 31px;
+}
+
+.form-group-password .password-icon {
+    display: block;
+    width: 28px;
+    height: 16px;
+    background-position: 6px!important;
+    background-color: var(--formGroupPasswordPpasswordIconBgColor)!important;
+    cursor: pointer;
+    font-size: 14px;
+    height: 31px;
+}
+
+.form-group-password .password-off:before {
+    font-family: dfi;
+    content: "\e904";
+    position: relative;
+    top: 0px;
+    left: -2px;
+}
+
+.form-group-password .password-on:before {
+    font-family: dfi;
+    content: "\e903";
+    position: relative;
+    top: 0px;
+    left: -2px;
+}
+
+.form-group-password .progress {
+    top: -5px;
+    position: relative;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--formGroupPasswordProgressBarBgColor);
+}
+
+@media (max-width: 575.98px) {
+    .form-group-password .progress {
+        top: -20px;
+    }
+}

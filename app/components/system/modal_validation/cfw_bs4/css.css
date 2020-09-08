@@ -1,0 +1,67 @@
+/*
+    https://codepen.io/hajududat/pen/mAxNXV
+*/
+
+.errors {
+    list-style: none;
+}
+
+.errors li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 10px;
+}
+
+.errors li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    height: 5px;
+    width: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--modalErrorLiColor);
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+body {
+    overflow-y: scroll!important;
+}
+
+.html-modal {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+
+.modal .btn-close:before {
+    font-family: dfi;
+    content: "\e900";
+    font-size: 13px;
+    left: -2px;
+    position: relative;
+}
+
+.modal .close:before {
+    font-family: dfi;
+    content: "\e909";
+    font-size: 11px;
+    left: 8px;
+    position: relative;
+    top: -8px;
+}
+
+.modal-error {
+    padding-right: 17px;
+    display: block;
+}
+
+.modal-error .modal-body {
+    padding: 0px;
+}
+
+.modal-error .modal-body .alert {
+    border-radius: 0px;
+}

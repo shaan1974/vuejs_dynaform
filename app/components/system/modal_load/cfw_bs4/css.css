@@ -1,0 +1,49 @@
+/* LOADER */
+
+.modal-load {
+    top: calc( 50vh - 40px);
+}
+
+.modal-backdrop-load.show {
+    opacity: .7!important;
+}
+
+.modal-load .modal-body {
+    height: 80px;
+    position: relative;
+}
+
+.loader {
+    display: flex;
+    _height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    height: 5vh;
+    width: 5vh;
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--spinnerBorderColor1);
+    border-top-color: var(--spinnerBorderColor2);
+    border-radius: 100%;
+    animation: rotation 0.6s infinite linear 0.25s;
+    /* the opacity is used to lazyload the spinner, see animation delay */
+    /* this avoid the spinner to be displayed when visible for a very short period of time */
+    opacity: 0;
+}
+
+@keyframes rotation {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(359deg);
+    }
+}
+
+
+/* *** */

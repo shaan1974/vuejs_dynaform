@@ -1,0 +1,92 @@
+.numberWidth {
+    position: absolute;
+    top: -100000px;
+}
+
+
+/*  CHROMIUM FAMILY */
+
+.numberNoArrows::-webkit-inner-spin-button,
+.numberNoArrows::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*  FIREFOX */
+
+.numberNoArrows[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+}
+
+.form-group-no-arrows .input-group-prepend .input-group-text {
+    border-top-left-radius: .2rem!important;
+    border-bottom-left-radius: .2rem!important;
+}
+
+.form-group-no-arrows .up-icon,
+.form-group-no-arrows .down-icon {
+    cursor: pointer;
+    padding-left: 6px!important;
+    padding-right: 6px!important;
+}
+
+.form-group-no-arrows .up-icon:before {
+    font-family: dfi;
+    content: "\e91a";
+    font-size: 11px;
+}
+
+.form-group-no-arrows .down-icon:before {
+    font-family: dfi;
+    content: "\e90c";
+    font-size: 11px;
+}
+
+
+/* ------- */
+
+.b-icon {
+    width: 24px;
+    display: block;
+    height: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.b-sep {
+    background-color: #ced4da;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.plus-icon:before {
+    font-family: dfi;
+    content: "\e908";
+    font-size: 8px;
+    position: absolute;
+    left: 8px;
+    top: 2px;
+}
+
+.less-icon:before {
+    font-family: dfi;
+    content: "\e907";
+    font-size: 8px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+}
+
+.form-group-number-2 input[type='number'] {
+    border-top-left-radius: .2rem!important;
+    border-bottom-left-radius: .2rem!important;
+}
+
+.form-group-number-1 .input-group,
+.form-group-number-2 .input-group {
+    min-width: 150px;
+    max-width: 150px;
+}
