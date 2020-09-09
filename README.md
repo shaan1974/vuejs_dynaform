@@ -11,7 +11,7 @@ dynamic/php/db.php
 
 **Database Sql Schema :**
 
-dynamic/rest/_data/rest.sql
+dynamic/rest/__data/rest.sql
 
 **Form Data structure :**
 
